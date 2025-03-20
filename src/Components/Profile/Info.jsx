@@ -35,7 +35,7 @@ const Info=()=>{
         setEdit(false);
         let updatedProfile={...profile,...form.getValues()};
         dispatch(changeProfile(updatedProfile));
-        window.location.replace("/profile");
+        window.location.reload();
         successNotification("Success","Your profile has been updated successfully");
         
     }
