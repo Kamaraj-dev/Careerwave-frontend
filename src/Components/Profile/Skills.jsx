@@ -25,7 +25,7 @@ const Skills = () => {
         setEdit(false);
         let updatedProfile={...profile,skills:skills};
         dispatch(changeProfile(updatedProfile));
-        window.location.reload();
+        window.location.replace("/profile");
         successNotification("Success","Your Skills has been updated successfully");
     }
 
