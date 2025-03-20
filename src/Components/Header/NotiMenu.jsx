@@ -16,7 +16,7 @@ const NotiMenu=()=>{
             let notis=[...notifications];
             notis=notis.filter((noti,i)=>i!=index);
             setNotification(notis);
-            readNotification(notifications[index].id).then((res)=>console.log(res)).catch((err)=>console.log(err));
+            readNotification(notifications[index].id).then((res)=>res).catch((err)=>console.log(err));
         }
         useEffect(()=>{
             if(user?.id){
