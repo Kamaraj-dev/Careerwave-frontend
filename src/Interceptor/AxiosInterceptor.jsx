@@ -2,7 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
   // baseURL: "http://localhost:8080",
-  baseURL:"https://careerwave-backend.onrender.com"
+  baseURL: 'https://careerwave-backend.onrender.com',
 });
 
 axiosInstance.interceptors.request.use(
