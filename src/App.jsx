@@ -14,14 +14,16 @@ import { BrowserRouter } from 'react-router-dom';
 const App = () => {
     
     return (
-        <BrowserRouter>
+        
         <Provider store={Store}>
         <MantineProvider>
+            <BrowserRouter>
             <Notifications position="top-center" zIndex={1000} />
             <AppRoutes/>
+            </BrowserRouter>
         </MantineProvider>
         </Provider>
-        </BrowserRouter>
+        
     );
 }
 
