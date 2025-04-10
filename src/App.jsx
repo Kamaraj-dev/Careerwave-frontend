@@ -8,22 +8,16 @@ import { Notifications } from '@mantine/notifications';
 import { Provider } from 'react-redux';
 import Store from './Store';
 import AppRoutes from './Pages/AppRoutes';
-import { BrowserRouter } from 'react-router-dom';
-
 
 const App = () => {
     
     return (
-        
         <Provider store={Store}>
         <MantineProvider>
-            <BrowserRouter>
             <Notifications position="top-center" zIndex={1000} />
             <AppRoutes/>
-            </BrowserRouter>
         </MantineProvider>
         </Provider>
-        
     );
 }
 
