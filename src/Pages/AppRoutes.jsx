@@ -25,8 +25,8 @@ const AppRoutes=()=>{
 
                 <Routes>
                     <Route path='*' element={<Homepage />} />
-                    <Route path='/find-job' element={user?<FindJob />:<Navigate to="/"/>} />
-                    <Route path='/find-talent' element={user?<FindTalent />:<Navigate to="/"/>} />
+                    <Route path='/find-job' element={<FindJob />} />
+                    <Route path='/find-talent' element={<FindTalent />} />
                     <Route path='/jobs/:id' element={user?<JobDescribePage />:<Navigate to="/"/>} />
                     <Route path='/company/:name' element={user?<CompanyPage />:<Navigate to="/"/>} />
                     <Route path='/post-job/:id' element={user?<ProtectedRoute allowedRoles={['EMPLOYER']}><PostJobPage /></ProtectedRoute>:<Navigate to={"/"}/> } />
